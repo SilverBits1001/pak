@@ -40,6 +40,7 @@ Copy the resulting file to `roms/paks/` on the TrimUI Brick SD card to test it.
 4. Safely eject the SD card, insert it back into the TrimUI Brick, and launch
    Next UI. The “Hello World” entry will now appear in the Pak list.
 
+
 ## Customisation ideas
 
 - Replace the menu entries in `hello-world/main.lua` with launchers for your own
