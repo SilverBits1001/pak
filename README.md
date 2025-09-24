@@ -27,7 +27,15 @@ script to create `dist/hello-world.pak`:
 ./tools/make-dist.sh
 ```
 
-Copy the resulting file to `roms/paks/` on the TrimUI Brick SD card to test it.
+If you have the SD card mounted on your computer you can pass the destination
+path (usually `roms/paks/`) and the script will copy the pak for you:
+
+```bash
+./tools/make-dist.sh /media/trimui/roms/paks
+```
+
+Otherwise copy `dist/hello-world.pak` to `roms/paks/` on the TrimUI Brick SD
+card to test it.
 
 ## Installation
 
