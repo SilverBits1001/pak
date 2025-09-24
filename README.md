@@ -1,1 +1,38 @@
-# pak
+# TrimUI Brick Next UI Hello World Pak
+
+This repository contains a reference pak that demonstrates a simple menu-driven
+application for the TrimUI Brick running the Next UI launcher. The example
+shows how to:
+
+- Display a scrollable menu the player can navigate with the D-Pad or stick.
+- Enter a secondary screen with placeholder text.
+- Use the `B` button to go back and exit the pak.
+
+## Repository layout
+
+```
+hello-world/       # Source files for the pak
+└── main.lua       # Entry point used by Next UI
+└── manifest.json  # Metadata consumed by the launcher
+dist/              # Build artefacts (created after running the build script)
+tools/make-dist.sh # Helper script that zips the pak
+```
+
+## Building
+
+The pak format is just a zip archive with a `.pak` extension. Run the helper
+script to create `dist/hello-world.pak`:
+
+```bash
+./tools/make-dist.sh
+```
+
+Copy the resulting file to `roms/paks/` on the TrimUI Brick SD card to test it.
+
+## Customisation ideas
+
+- Replace the menu entries in `hello-world/main.lua` with launchers for your own
+  scripts or emulators.
+- Change the lorem ipsum placeholder text to whatever you need to display.
+- Add additional screens by pushing more `nextui.screens.Text` or
+  `nextui.screens.List` instances onto the stack.

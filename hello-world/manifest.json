@@ -1,0 +1,14 @@
+{
+  "id": "com.example.helloworld",
+  "name": "Hello World",
+  "version": "1.0.0",
+  "author": "OpenAI Assistant",
+  "description": "Reference Next UI pak showing a simple navigable menu and detail screens.",
+  "launcher": {
+    "type": "next",
+    "entry": "main.lua"
+  },
+  "targets": ["trimui-brick"],
+  "tags": ["example", "tutorial"],
+  "createdWith": "pak-template 1.0"
+}
