@@ -29,6 +29,18 @@ script to create `dist/hello-world.pak`:
 
 Copy the resulting file to `roms/paks/` on the TrimUI Brick SD card to test it.
 
+## Installation
+
+1. Build the pak (or download the pre-built archive from a release) so that you
+   have `dist/hello-world.pak` available on your computer.
+2. Insert the TrimUI Brick SD card into your computer (or mount it over USB)
+   and open the `roms/paks/` directory used by Next UI.
+3. Copy `hello-world.pak` into `roms/paks/`. You can optionally create a
+   sub-folder if you prefer to organise custom paks.
+4. Safely eject the SD card, insert it back into the TrimUI Brick, and launch
+   Next UI. The “Hello World” entry will now appear in the Pak list.
+
+
 ## Customisation ideas
 
 - Replace the menu entries in `hello-world/main.lua` with launchers for your own
